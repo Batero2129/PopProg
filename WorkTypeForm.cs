@@ -23,10 +23,11 @@ namespace PopProg
         private string _workType9 = "Установка штампа";
         private string _workType10 = "Снятие штампа";
         private string _workType11 = "Запрессовка";
-        private string _workType12 = "";
-        private string _workType13 = "";
+        private string _workType12 = "Шлифовка";
+        private string _workType13 = "Распил";
         private string _workType14 = "";
         private string _workType15 = "";
+
 
         public string WorkTypeChoise { get; set; }
 

@@ -29,7 +29,7 @@ namespace PopProg
         private string _units;
 
         private string _strokaObsh;
-
+        Timer timer = new Timer();
 
 
         public MainForm()
@@ -41,9 +41,18 @@ namespace PopProg
             this.Height = Screen.PrimaryScreen.Bounds.Height;
 
             //LoadDB();
+            timer = new Timer(); // создаем новый таймер
+            timer.Interval = 2000; // ставим интервал выполнения единственного события, через 5 секунд
+            timer.Tick += SaverToTime; // создаем событие
+            timer.Enabled = true;// включаем таймер
+            timer.Start();
+
         }
 
+        private void SaverToTime(object sender, EventArgs e)
+        {
 
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -200,5 +209,4 @@ namespace PopProg
             newWorkForm.ShowDialog();
         }
     }
-
 }
