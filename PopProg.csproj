@@ -231,7 +231,6 @@
     <EmbeddedResource Include="WorkTypeForm.resx">
       <DependentUpon>WorkTypeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="PopProg_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
