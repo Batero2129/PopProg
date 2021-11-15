@@ -15,8 +15,6 @@ namespace PopProg
 {
     public partial class MainForm : Form
     {
-
-
         private string _date;
         private string _fio;
         private string _stanok;
